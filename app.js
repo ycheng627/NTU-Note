@@ -6,6 +6,7 @@ var session = require('express-session');
 var mongoose = require('mongoose');
 var {dbpath} = require('./config');
 
+var indexRouter = require('./routes/index');
 var authRouter = require('./routes/auth');
 var userRouter = require('./routes/user');
 var noteRouter = require('./routes/notes');
@@ -33,5 +34,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/auth', authRouter);
 app.use('/user', userRouter);
 app.use('/api/notes', noteRouter);
+app.use('*', indexRouter);
 
 module.exports = app;
