@@ -5,6 +5,9 @@
 鄭益昀 B07902084
 蔡銘軒 B07902064
 
+### Github Link
+Backend: https://github.com/jason-plainlog/NTU-Note-backend
+Frontend: https://github.com/jason-plainlog/NTU-Note-frontend
 
 ### Deployed Link
 
